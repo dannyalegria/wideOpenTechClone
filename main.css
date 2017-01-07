@@ -1,0 +1,266 @@
+
+*{
+  box-sizing:border-box;
+}
+
+html,
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.nav-wrapper{
+  width:100%;
+  height:75px;
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:2;
+}
+
+.nav-left{
+  padding:30px auto;
+}
+
+.nav-right{
+}
+
+.nav-section{
+  height:100%;
+  width:50%;
+  float:left;
+  display:flex;
+  align-items:center;
+
+}
+
+.main-nav{
+  display:flex;
+  align-items:center;
+  color:#97A2A7;
+  font-family:arial;
+  font-size:16px;
+  padding:30px auto;
+}
+
+.main-nav ul{
+  height:100%;
+  display:flex;
+}
+
+.main-nav ul li{
+  list-style-type: none;
+  margin-right: 10px;
+}
+
+.jumbotron{
+  background-image:url('wideopentechimages/background.jpg');
+  background-size:cover;
+  width:100%;
+  height:100vh;
+  position:relative;
+  z-index:1;
+}
+
+.header-container{
+  width:100%;
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  margin:0;
+  padding:0
+}
+
+.header-center{
+  margin: 0 auto;
+  width:590px;
+  line-height: 0;
+}
+
+.header-container h1{
+  color:white;
+  font-family:"Oswald";
+  font-size:8em;
+  font-weight:300;
+  font-weight:lighter;
+  display:block;
+  line-height:0;
+  margin:0.6em 0;
+}
+
+.header-container h2{
+  color:white;
+  font-family:"Oswald";
+  font-weight:300;
+  display:block;
+  text-align:left;
+  line-height:0;
+}
+
+.header-container h3{
+  color:white;
+  font-family:"Oswald";
+  text-align:center;
+  margin:2em auto;
+}
+
+.jumbotron .action-btn{
+  width:40%;
+  padding:20px 0;
+  background-color:lightgreen;
+  margin:2em auto;
+  border-radius:25px;
+  cursor:pointer;
+  color:black;
+  text-align: center;
+}
+
+.heres-how-it-works-section{
+  background-color:#F0F0F0;
+  color: #6A787C;
+  width:100%;
+  margin: 0 auto;
+  padding: 40px 0;
+  text-align: center;
+  font-family:'Open Sans';
+  font-size: 24px;
+  line-height: 36px;
+  margin-bottom: 0px;
+}
+
+.heres-how-it-works-section h2{
+  font-family: 'Oswald';
+  font-size:42px;
+}
+
+.heres-how-it-works-section h2 span{
+  font-weight: bold;
+  color: #bdd436;
+}
+
+.row{
+  background-color:white;
+  width:100%;
+}
+
+.box{
+display:inline-block;
+width:calc(99%/3);
+min-width:300px;
+margin:0;
+font-size:18px;
+border-right: solid 1px;
+}
+
+.small-text{
+  font-size:12px;
+  color:#bdd436;
+}
+
+.help{
+  background-color:#F0F0F0;
+  color: #6A787C;
+}
+
+.help p{
+  text-align:center;
+  font-family: "Helvetica";
+  font-size:18px;
+}
+
+.help h2{
+  font-family: 'Oswald';
+  font-size:42px;
+  text-align: center;
+}
+
+.help h2 span{
+  font-weight: bold;
+  color: #bdd436;
+}
+
+.text-block-container{
+  width:75%;
+  margin:0 auto;
+  display:block;
+  font-family: 'Open Sans';
+  font-size: 18px;
+}
+
+.text-blocks{
+  background:white;
+  margin:10px auto;
+  white-space:normal;
+  width:50%;
+}
+
+.portfolio{
+  background-color:white;
+}
+
+.portfolio h2{
+  font-size: 42px;
+  color: #6a787c;
+  font-family: 'Oswald';
+  text-align:center;
+  font-weight:lighter;
+}
+
+.portfolio .row img{
+  display:inline-block;
+  width:calc(99%/3);
+  min-width:300px;
+}
+
+.contact{
+  background-color:#40666D;
+}
+
+.contact-pictures{
+  display:inline-block;
+  width:calc(99%/3);
+}
+
+.contact-text{
+  padding:5% 5%;
+}
+
+.contact h2{
+  color: #fff;
+  text-align: left;
+  font-size: 28px;
+  font-family: 'Open Sans';
+}
+
+.btn{
+  float:right;
+}
+
+.footer{
+  background-color:gray;
+}
+
+.hamburger{ /*<------NOT FINISHED YET need to link image*/
+  display:none;
+  height:20px;
+  width:20px;
+  background-color:white;
+}
+
+@media (max-width:800px){
+  .nav-wrapper .main-nav{
+    display:none;
+  }
+
+  .hamburger {
+    display:block;
+  }
+
+  .jumbotron .action-btn{
+    width:200px;
+  }
+}
+
+.logo {
+  width:200px;
+}
